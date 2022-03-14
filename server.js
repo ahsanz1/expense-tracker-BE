@@ -1,4 +1,7 @@
-require('dotenv').config()
+/**
+ * Uncomment dotenv import for local dev
+ */
+//require('dotenv').config()
 const express = require("express")
 const app = express()
 const mongoose = require("mongoose")
