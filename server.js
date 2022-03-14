@@ -15,5 +15,6 @@ app.use(express.json())
 const expenseTrackerRouter = require('./routes/expense-tracker')
 app.use('/api-expense-tracker', expenseTrackerRouter)
 
+const PORT = process.env.PORT || 5000
 
-app.listen(5000, () => console.log('Server Started'))
+app.listen(PORT, () => console.log(`Server Started on PORT ${PORT}`))
